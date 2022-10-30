@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Aleatorios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body_2">
+    
+        <div class="datos">
+            <div class="ingreso_datos" id="ing_datos">
+                    
+                    <label>Valor X</label>
+                    <input type="number" id="valx">
+                    <!-- X debe ser mayor que 0 -->
+                
+                    <label>Valor A</label>
+                    <input type="number" id="vala">
+                    <!-- a debe ser mayor que 0 -->
+                
+                    <label>Valor C</label>
+                    <input type="number" id="valc">
+                    <!-- c debe ser mayor que 0 -->
+                
+                    <label>Valor del modulo</label>
+                    <input type="number" id="modulo"><br>
+                    <!-- El modulo debe ser mayor que m>x; m>a y m>c -->
+
+            </div>
+
+                <div class="guard">
+                    <br>
+                    <button onclick="guardar()">Guardar Números</button><br><br>
+                    <button onclick="generar()">Generar Números Aleatorios</button><br><br>
+                </div>
+                
+                    <div>
+                        <label>Pruebas Estadísticas</label><br><br>
+
+                                <button onclick="promedio()">Promedio</button><br><br>
+                                <button onclick="frecuencia()">Frecuencia</button><br><br>
+                                <button onclick="chi()">Chi Cuadrado</button><br><br>
+                                <button onclick="poisson()">Poisson</button><br><br>
+                                <button onclick="kolmo()">Kolmogorov</button><br><br>
+                    </div>
+        </div>
+
+    <a href="index.html">Regresar a ventana Principal</a>
+
+    <br><br>
+
+
+    <div id="resul_ale" class="resul">
+
+        <label for="">Aquí va el resultado de X: </label>
+        <label id="resul_x"> </label>
+    
+        <br><br>
+
+        <label for="">Aquí va el resultado de A: </label>
+        <label id="resul_a"> </label>
+    
+        <br><br>
+        
+        <label for="">Aquí va el numero aleatorio: </label>
+        <label id="aleatorio"> </label>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
